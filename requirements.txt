@@ -2,3 +2,4 @@ django
 gunicorn
 django-heroku
 django-extensions==2.1.9
+djangorestframework==3.9.4
