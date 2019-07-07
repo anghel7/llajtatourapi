@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     "django_extensions",
     "corsheaders",
     "rest_framework",
-    "paquetes"
+    "paquetes",
+    "clientes"
 ]
 
 MIDDLEWARE = [

@@ -4,7 +4,9 @@ from django.contrib import admin
 
 from rest_framework import routers
 
-from paquetes import views
+from paquetes.views import PaqueteViewSet
+
+from clientes.views import ClienteViewSet
 
 admin.autodiscover()
 
@@ -17,9 +19,11 @@ admin.autodiscover()
 #
 # Learn more here: https://docs.djangoproject.com/en/2.1/topics/http/urls/
 router = routers.DefaultRouter()
-router.register('paquetes', views.PaqueteViewSet)
+router.register('paquetes', PaqueteViewSet)
+router.register('clientes', ClienteViewSet)
 
 urlpatterns = [
+    path('', include(router.urls)),
     path("admin/", admin.site.urls),
     path('api/', include(router.urls)),
 ]
