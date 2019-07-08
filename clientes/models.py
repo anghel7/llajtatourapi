@@ -7,6 +7,3 @@ class Cliente(models.Model):
     direccion = models.TextField(max_length=200, verbose_name="Direccion")
     ci = models.PositiveIntegerField(verbose_name="CI")
     telefono = models.PositiveIntegerField(verbose_name="Telefono")
-
-    def __str__(self):
-        return self.name

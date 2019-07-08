@@ -8,5 +8,3 @@ class Paquete(models.Model):
     guia = models.CharField(max_length=100, verbose_name="Guia")
     fechaPartida = models.CharField(max_length=100, verbose_name="FechaPartida")
 
-    def __str__(self):
-        return self.name
