@@ -6,4 +6,4 @@ from .models import Cliente
 class ClienteSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Cliente
-        fields = ('nombre','apellidos','direccion','ci','telefono',)
+        fields = ('id','nombre','apellidos','direccion','ci','telefono',)
