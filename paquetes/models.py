@@ -7,5 +7,5 @@ class Paquete(models.Model):
     precio = models.PositiveIntegerField(verbose_name="Precio")
     guia = models.CharField(max_length=100, verbose_name="Guia")
     fechaPartida = models.CharField(max_length=100, verbose_name="FechaPartida")
-    img_url = models.CharField(max_length=100, verbose_name="img_url")
+    img_url = models.CharField(max_length=300, verbose_name="img_url")
 
