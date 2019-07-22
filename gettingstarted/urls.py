@@ -6,7 +6,7 @@ from rest_framework import routers
 
 from paquetes.views import PaqueteViewSet
 
-from clientes.views import ClienteViewSet
+from users.views import ClienteViewSet
 
 admin.autodiscover()
 
@@ -21,6 +21,7 @@ admin.autodiscover()
 router = routers.DefaultRouter()
 router.register('paquetes', PaqueteViewSet)
 router.register('clientes', ClienteViewSet)
+router.register('users', ClienteViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
